@@ -1,5 +1,6 @@
+
 document.addEventListener("DOMContentLoaded", function() {
-    VANTA.WAVES({
+    VANTA.NET({
         el: "#background",
         mouseControls: true,
         touchControls: true,
@@ -7,11 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
         minHeight: 200.00,
         minWidth: 200.00,
         scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x15041e,
-        shininess: 11.00,
-        waveHeight: 21.50,
-        waveSpeed: 1.25,
-        zoom: 0.98
-    });
+        scaleMobile: 1.00
+      })
 });
