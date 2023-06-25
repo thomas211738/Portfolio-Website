@@ -72,12 +72,15 @@ p {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    transition: transform 0.3s ease;
+    transition: transform 1.75s ease;
+    transform-origin: 50% 40%;
 }
 
 .image-container:hover img{
-    transform: scale(1.2);
+    transform: scale(4.5);
+    transform-origin: 50% 40%;
 }
+
 
 .text-container {
     position: relative;
