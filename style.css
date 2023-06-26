@@ -38,7 +38,7 @@ p {
 }
 
 
-
+/* KTP SECTION*/
 .section {
     background-color: #9e69c049;
     display: flex;
@@ -51,7 +51,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 53vh;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -131,39 +131,86 @@ p {
 
    
 }
-
 #parachute-section {
     position: relative;
-    top: 50%;
-    
-    
     width: 100%;
-    height: 150vh;
-	background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    height: 310vh;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     overflow: hidden;
     /* Add other styles for the section */
   }
   
   .parachute-animation {
     width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: swing 2s ease-in-out infinite alternate;
-    /*Plane background color*/
-
-    
+    position: absolute;
+    top: -30%; /* Adjust the value to position the image off-screen */
+    left: 50%;
+    transform: translateX(-50%);
   }
-  .parachute-animation img{
+  
+  .parachute-animation img {
     width: 25%;
-    padding-top: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
   }
-  @keyframes swing {
+  
+  @keyframes parallax {
     0% {
-      transform: translate(-50%, -50%) rotate(10deg);
+      transform: translate(-50%, -200%); /* Adjust the value to position the image off-screen */
     }
     100% {
-      transform: translate(-50%, -50%) rotate(-10deg);
+      transform: translate(-50%, 100%);
     }
   }
+
+  
+  .rocket-animation {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%);
+    animation: rocketLaunch 5s linear forwards;
+    visibility: hidden;
+  }
+  
+  .rocket-animation img {
+    width: 25%;
+  }
+  
+  @keyframes rocketLaunch {
+    0% {
+      transform: translate(-50%, 100%);
+      visibility: visible;
+    }
+    100% {
+      transform: translate(-50%, -100%);
+      visibility: hidden;
+    }
+  }
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .gradient-text {
+    background-image: linear-gradient(to right, #ff0000, #0000ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  
+  .intro.in-view .gradient-text {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
