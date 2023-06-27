@@ -5,7 +5,9 @@ body {
     font-family: 'Foldit', cursive;
     font-family: 'Nabla', cursive;
     font-family: 'Pacifico', cursive;
+    font-family: 'Ubuntu', sans-serif;
     font-family: 'Caprasimo', cursive;
+    
 
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ body {
 }
 
 #background {
-    
+    margin-top: -18px;
     width: 100%;
     height: 100vh;
     z-index: -1;
@@ -222,24 +224,25 @@ p {
 
   .intro {
     
-    margin-top: -30px;
+    margin-top: 5px;
     padding: 0;
     position: relative;
     height: 200vh;
     background: linear-gradient(#fff1eb 0%,  #41889c);
   }
 
-  .intro .header{
-    font:  'Caprasimo', cursive;
+  .intro .header {
+    position: absolute;
+    left: 36%;
+    top: 1%;
+    font: 'Caprasimo', cursive;
     text-shadow: 0 0 10px black;
-    top: 50%;
-
     text-align: center;
     font-size: 70px;
     align-items: flex-start;
     transform: scale(0.7);
-
   }
+  
 
   .intro.in-view .intro .header {
     opacity: 1;
@@ -247,16 +250,19 @@ p {
   }
   
   .gradient-text {
+    position: absolute;
+    left: 25%;
+    top: 15%;
     background-image: linear-gradient(to right, #fd0000, #6140d7);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     text-align: center;
-    font-size: 100px;
+    font-size: 90px;
     font-weight: bold;
     opacity: 0;
     transform: scale(0.3);
-    font-family: 'Pacifico', cursive;
+    font-family: 'Ubuntu', cursive;
     align-items: flex-end;
     
     
@@ -267,11 +273,27 @@ p {
     transform: scale(1);
   }
   .intro .Thomas {
-    width: 10%;
-    left: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    object-position:50% 0%;
+    border-radius: 150px;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+
   }
 
   .intro .Josh {
-    width: 10%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    object-position: top;
+    border-radius: 150px;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+
+
   }
   
