@@ -272,7 +272,10 @@ p {
     opacity: 1;
     transform: scale(1);
   }
+  
   .intro .Thomas {
+    max-height: 100%;
+    max-width: 100%;
     width: 300px;
     height: 300px;
     object-fit: cover; 
@@ -281,8 +284,15 @@ p {
     position: absolute;
     left: 15%;
     top: 40%;
+    transition: transform 1.75s ease;
+    transform-origin: 50% 40%;
+}
 
-  }
+.intro .Thomas:hover {
+    transform: scale(1.5);
+    transform-origin: center;
+}
+
 
   .intro .Josh {
     width: 300px;
@@ -293,7 +303,44 @@ p {
     position: absolute;
     top: 40%;
     left: 65%;
-
-
   }
   
+  .intro .description1{
+    height: 300px;
+    width: 400px;
+    background-color: rgba(48, 48, 48, 0.785);
+    position: absolute;
+    top: 60%;
+    left: 12%;
+    border-radius: 20px;
+  }
+
+  .intro .description1 p{
+    display: flex;
+    font-family: 'Caprasimo', cursive;
+    font-weight: 2000;
+    font-size: 22px;
+    padding: 4px;
+    padding-left: 25px;
+
+  }
+
+  .intro .description2{
+    height: 300px;
+    width: 400px;
+    background-color: rgba(48, 48, 48, 0.785);
+    position: absolute;
+    top: 60%;
+    left: 61.5%;
+    border-radius: 20px;
+  }
+
+  .intro .description2 p{
+    display: flex;
+    font-family: 'Caprasimo', cursive;
+    font-weight: 2000;
+    font-size: 22px;
+    padding: 4px;
+    padding-left: 25px;
+
+  }
