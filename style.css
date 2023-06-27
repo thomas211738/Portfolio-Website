@@ -273,51 +273,41 @@ p {
     transform: scale(1);
   }
 
-  .intro .Thomas {
-    max-height: 100%;
-    max-width: 100%;
+  .intro .Thomas img {
+    position: absolute;
     width: 300px;
     height: 300px;
-    object-fit: cover; 
-    object-position:50% 0%;
+    object-fit: cover;
+    object-position: 50% 0%;
     border-radius: 150px;
-    position: absolute;
     left: 15%;
-    top: 40%;
-    
-}
-
-.intro .Thomas img{
-    transition: transform 1.75s ease;
-    transform-origin: center;
-    width: 300px;
-    height: 300px;
-    object-fit: cover; 
-    object-position:50% 0%;
-    border-radius: 150px;
-    position: absolute;
-    left: 15%;
-    top: 40%;
-
-}
-
-
-.intro .Thomas :hover img{
-    transform: scale(1.5);
+    top: 38%;
+    transition: transform 1s ease;
     transform-origin: center;
 }
 
+.intro .Thomas img:hover {
+    transform: scale(1.2);
+}
 
-  .intro .Josh {
+
+
+.intro .Josh img {
+    position: absolute;
     width: 300px;
     height: 300px;
-    object-fit: cover; 
-    object-position: top;
+    object-fit: cover;
+    object-position: 50% 0%;
     border-radius: 150px;
-    position: absolute;
-    top: 40%;
     left: 65%;
-  }
+    top: 38%;
+    transition: transform 1s ease;
+    transform-origin: center;
+}
+
+.intro .Josh img:hover {
+    transform: scale(1.2);
+}
   
   .intro .description1{
     height: 300px;
