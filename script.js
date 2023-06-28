@@ -45,10 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   
   typeWriter(); // Start the typewriter effect
-  
-  
-  
-
 
     VANTA.NET({
         el: "#background",
@@ -98,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         window.addEventListener("scroll", function() {
-          var scrollAmount = 5; // Adjust the scroll amount to control the speed and distance of the movement
       
           var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
           
@@ -152,8 +147,6 @@ document.addEventListener("DOMContentLoaded", function() {
               fadeOutElement(parachute2);
               
           }
-          
-        
           prevScrollPos = scrollTop;
         });
         
@@ -173,6 +166,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
           })
           .addTo(controller);
+
+          const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach((entry) => {
+              console.log(entry)
+              if (entry.isIntersecting){
+                entry.target.classList.add('show');
+              }else{
+                entry.target.classList.remove('show');
+              }
+            });
+          });
+          
+          const programing_languages_element = document.querySelectorAll('.programing_languages');
+          programing_languages_element.forEach((el) => observer.observe(el));
+          
+          
+          
+
 
 });
 
