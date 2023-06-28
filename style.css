@@ -21,7 +21,6 @@ body {
 }
 
 #background {
-    margin-top: -18px;
     width: 100%;
     height: 100vh;
     z-index: -1;
@@ -311,7 +310,7 @@ p {
     transform: scale(1.2);
 }
   
-  .intro .description1{
+.intro .description1 {
     height: 300px;
     width: 400px;
     background-color: rgba(48, 48, 48, 0.785);
@@ -319,20 +318,24 @@ p {
     top: 50%;
     left: 12%;
     border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Updated this line */
+   
   }
-
-  .intro .description1 p{
-    position: absolute;
-    top: 5%;
+  
+  .intro .description1 p {
     font-family: 'Caprasimo', cursive;
     font-weight: 2000;
     font-size: 22px;
     padding: 4px;
     padding-left: 25px;
+    margin: 0; /* Added this line to remove default margin */
+    text-align: left;
 
   }
-
-  .intro .description2{
+  
+  .intro .description2 {
     height: 300px;
     width: 400px;
     background-color: rgba(48, 48, 48, 0.785);
@@ -340,22 +343,29 @@ p {
     top: 50%;
     left: 61.5%;
     border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Updated this line */
+    
   }
-
-  .intro .description2 p{
   
+  .intro .description2 p {
+
     font-family: 'Caprasimo', cursive;
     font-weight: 900;
     font-size: 22px;
-    padding: 10px;
+    padding: 4px;
     padding-left: 25px;
+    margin: 0; /* Added this line to remove default margin */
+    text-align: left;
 
   }
+  
 
   .about1{
     position: absolute;
     top: 69%;
-    left: 12%;
+    left: 17%;
     font-size: 40px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
@@ -363,21 +373,21 @@ p {
 
   .about2{
     position: absolute;
-    top: 95%;
-    left: 12%;
+    top: 94%;
+    left: 17%;
     font-size: 40px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
   }
 
-  .intro p{
+  .paragraph p{ 
     position: absolute;
     top: 73%;
-    left: 15%;
+    left: 20%;
     font-size: 32px;
     font-family: 'Patrick Hand', cursive;;
     font-weight: 900;
     text-align: left;
-    padding-right: 250px;
+    padding-right: 200px;
 
   }
