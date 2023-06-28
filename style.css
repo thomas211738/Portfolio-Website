@@ -6,7 +6,9 @@ body {
     font-family: 'Nabla', cursive;
     font-family: 'Pacifico', cursive;
     font-family: 'Ubuntu', sans-serif;
+    font-family: 'Patrick Hand', cursive;;
     font-family: 'Caprasimo', cursive;
+
     
 
     margin: 0;
@@ -227,7 +229,7 @@ p {
     margin-top: 5px;
     padding: 0;
     position: relative;
-    height: 200vh;
+    height: 250vh;
     background: linear-gradient(#fff1eb 0%,  #41889c);
   }
 
@@ -235,7 +237,7 @@ p {
     position: absolute;
     left: 36%;
     top: 1%;
-    font: 'Caprasimo', cursive;
+    font-family: 'Ubutnu', sans-serif;
     text-shadow: 0 0 10px black;
     text-align: center;
     font-size: 70px;
@@ -252,8 +254,8 @@ p {
   .gradient-text {
     position: absolute;
     left: 25%;
-    top: 15%;
-    background-image: linear-gradient(to right, #ff6600, #4929ea);
+    top: 12%;
+    background-image: linear-gradient(to right, #1d1d1d, #727272, #000);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -281,7 +283,7 @@ p {
     object-position: 50% 0%;
     border-radius: 150px;
     left: 15%;
-    top: 38%;
+    top: 32%;
     transition: transform 1s ease;
     transform-origin: center;
 }
@@ -300,7 +302,7 @@ p {
     object-position: 50% 0%;
     border-radius: 150px;
     left: 65%;
-    top: 38%;
+    top: 32%;
     transition: transform 1s ease;
     transform-origin: center;
 }
@@ -314,13 +316,14 @@ p {
     width: 400px;
     background-color: rgba(48, 48, 48, 0.785);
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 12%;
-    border-radius: 20px;
+    border-radius: 50px;
   }
 
   .intro .description1 p{
-    display: flex;
+    position: absolute;
+    top: 5%;
     font-family: 'Caprasimo', cursive;
     font-weight: 2000;
     font-size: 22px;
@@ -334,17 +337,47 @@ p {
     width: 400px;
     background-color: rgba(48, 48, 48, 0.785);
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 61.5%;
-    border-radius: 20px;
+    border-radius: 50px;
   }
 
   .intro .description2 p{
-    display: flex;
+  
     font-family: 'Caprasimo', cursive;
-    font-weight: 2000;
+    font-weight: 900;
     font-size: 22px;
-    padding: 4px;
+    padding: 10px;
     padding-left: 25px;
+
+  }
+
+  .about1{
+    position: absolute;
+    top: 69%;
+    left: 12%;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+  }
+
+  .about2{
+    position: absolute;
+    top: 95%;
+    left: 12%;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+  }
+
+  .intro p{
+    position: absolute;
+    top: 73%;
+    left: 15%;
+    font-size: 32px;
+    font-family: 'Patrick Hand', cursive;;
+    font-weight: 900;
+    text-align: left;
+    padding-right: 250px;
 
   }

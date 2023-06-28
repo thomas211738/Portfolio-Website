@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const sentences = [
     "Thomas and Josh",
     "Data Scientists",
-    "Quant Analysts",
+    "Quantatative Analysts",
     "Software Engineers",
     "Financial Analysts"
   ];
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Create a ScrollMagic scene
         var scene = new ScrollMagic.Scene({
           triggerElement: '.intro', // Element that triggers the animation
-          triggerHook: 0.7, // Adjust this value to trigger the animation at the desired scroll position
+          triggerHook: 2.5, // Adjust this value to trigger the animation at the desired scroll position
         })
           .on('enter', function () {
             // Animate the element when it enters the trigger position
