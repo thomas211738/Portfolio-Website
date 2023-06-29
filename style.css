@@ -222,6 +222,11 @@ p {
     left: 50%;
   }
 
+
+
+
+  /* ABOUT US */
+
   .intro {
     margin-top: 5px;
     padding: 0;
@@ -309,12 +314,12 @@ p {
 }
   
 .intro .description1 {
-    height: 300px;
-    width: 400px;
+    height: 270px;
+    width: 600px;
     background-color: rgba(48, 48, 48, 0.785);
     position: absolute;
     top: 50%;
-    left: 12%;
+    left: 5%;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -332,31 +337,90 @@ p {
     text-align: left;
 
   }
+
+  .intro .description1 p:nth-child(1){
+    padding: 0;
+    margin-top: -15px;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .intro .description1 p:nth-child(4){
+
+    margin-top: -30px;
+
+}
+
+
+  .intro .description1 p:nth-child(5){
+    font-style: italic;
+    font-weight: lighter;
+    padding-left: 40px;  
+    margin-top: -30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+  .description1 hr {
+    width: 90%; /* Adjust the width as desired */
+    margin-left: 20px; /* Reset the default margin */
+    margin-top: -30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   
   .intro .description2 {
-    height: 300px;
-    width: 400px;
+    height: 270px;
+    width: 600px;
     background-color: rgba(48, 48, 48, 0.785);
     position: absolute;
     top: 50%;
-    left: 61.5%;
+    left: 54%;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; /* Updated this line */
-    
+   
   }
   
   .intro .description2 p {
-
     font-family: 'Caprasimo', cursive;
-    font-weight: 900;
+    font-weight: 2000;
     font-size: 22px;
     padding: 4px;
     padding-left: 25px;
     margin: 0; /* Added this line to remove default margin */
     text-align: left;
 
+  }
+
+  .intro .description2 p:nth-child(1){
+    padding: 0;
+    margin-top: -15px;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .intro .description2 p:nth-child(4){
+
+    margin-top: -30px;
+
+}
+
+
+  .intro .description2 p:nth-child(5){
+    font-style: italic;
+    font-weight: lighter;
+    padding-left: 40px;  
+    margin-top: -30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+  .description2 hr {
+    width: 90%; /* Adjust the width as desired */
+    margin-left: 20px; /* Reset the default margin */
+    margin-top: -30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   
 
