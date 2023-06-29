@@ -389,14 +389,27 @@ p {
     padding-right: 200px;
   }
 
+  .title{
+    width: 100%;
+  }
+  .title h1{
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 0 0 10px black;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+  }
+
+
   .technical_skills{
     position: relative;
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
     height: 250vh;
     background: linear-gradient(#fff1eb 0%,  #41889c);
   }
+
 
   .programing_languages:nth-child(1) img{
     width: 150px;
@@ -409,16 +422,14 @@ p {
     padding-bottom: 0%;
 }
 
-
-
-
   .programing_languages{
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
-    
   }
+
+
 
   .programing_languages p{
     color: #000;
@@ -451,3 +462,6 @@ p {
     transition-delay: 600ms;
   }
  
+  .programing_languages:nth-child(5){
+    transition-delay: 800ms;
+  }
