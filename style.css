@@ -398,16 +398,19 @@ p {
     background: linear-gradient(#fff1eb 0%,  #41889c);
   }
 
+  .programing_languages:nth-child(1) img{
+    width: 150px;
+    padding-top: 100px;
+  }
+
   .programing_languages img{
     width: 200px;
     padding: 50px;
-    animation: loop-gif 2s infinite;
+    padding-bottom: 0%;
 }
 
-@keyframes loop-gif {
-  0% { opacity: 1; }
-  100% { opacity: 1; }
-}
+
+
 
   .programing_languages{
     opacity: 0;
@@ -419,8 +422,11 @@ p {
 
   .programing_languages p{
     color: #000;
-
-    
+    font-size: 26px;
+    font-family: 'Patrick Hand', cursive;;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-weight: 900;
   }
 
   .show{
@@ -429,13 +435,19 @@ p {
     transform: translateX(0);
   }
 
+
   .programing_languages:nth-child(2){
+    padding-top: 30px;
     transition-delay: 200ms;
+  }
+  .programing_languages:nth-child(2) p{
+    padding-top: 30px;
   }
   .programing_languages:nth-child(3){
     transition-delay: 400ms;
   }
   .programing_languages:nth-child(4){
+    padding-top: 40px;
     transition-delay: 600ms;
   }
  
