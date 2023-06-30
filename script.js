@@ -180,7 +180,10 @@ document.addEventListener("DOMContentLoaded", function() {
           });
           
           const programing_languages_element = document.querySelectorAll('.programing_languages');
+          const programing_languages_element2 = document.querySelectorAll('.programing_languages2');
+
           programing_languages_element.forEach((el) => observer.observe(el));
+          programing_languages_element2.forEach((el) => observer.observe(el));
           
           
           

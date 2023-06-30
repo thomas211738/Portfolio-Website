@@ -453,8 +453,15 @@ p {
     padding-right: 200px;
   }
 
+  /* TECHNICAL SKILLS SECTION */
+
   .title{
     width: 100%;
+    padding-top: 100px;
+    padding-bottom: -50px;
+    margin-bottom: -150px;
+
+
   }
   .title h1{
     font-family: 'Ubuntu', sans-serif;
@@ -462,14 +469,18 @@ p {
     font-size: 70px;
     text-align: center;
     color: white;
+
   }
 
 
   .technical_skills{
+    padding: 0;
+    margin: 0;
     position: relative;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
     height: 250vh;
     background: linear-gradient(#fff1eb 0%,  #41889c);
   }
@@ -481,27 +492,30 @@ p {
   }
 
   .programing_languages img{
+    margin-top: -50px;
     width: 200px;
     padding: 50px;
+    padding-top: -20px;
     padding-bottom: 0%;
 }
 
   .programing_languages{
+    margin-top: 200px;    
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
+    display: inline-block;
   }
-
-
 
   .programing_languages p{
     color: #000;
     font-size: 26px;
     font-family: 'Patrick Hand', cursive;;
-    font-weight: 100;
     letter-spacing: 1px;
     font-weight: 900;
+    padding: 0;
+    margin: 0;
   }
 
   .show{
@@ -509,23 +523,39 @@ p {
     filter: blur(0);
     transform: translateX(0);
   }
-
-
-  .programing_languages:nth-child(2){
+  .programing_languages:nth-child(3),.programing_languages:nth-child(7), .programing_languages:nth-child(11) {
     padding-top: 30px;
     transition-delay: 200ms;
   }
-  .programing_languages:nth-child(2) p{
+  .programing_languages:nth-child(3) p{
     padding-top: 30px;
+
   }
-  .programing_languages:nth-child(3){
+
+  .programing_languages:nth-child(4), .programing_languages:nth-child(8), .programing_languages:nth-child(12){
     transition-delay: 400ms;
   }
-  .programing_languages:nth-child(4){
-    padding-top: 40px;
+  .programing_languages:nth-child(5), .programing_languages:nth-child(9), .programing_languages:nth-child(13){
     transition-delay: 600ms;
   }
- 
+
   .programing_languages:nth-child(5){
-    transition-delay: 800ms;
+    padding-top: 40px;
   }
+  .programing_languages:nth-child(7) p{
+    padding-top: 75px;
+
+  }
+  .programing_languages:nth-child(11) p{
+    padding-top: 20px;
+  }
+  .programing_languages:nth-child(12) p{
+    padding-top: 50px;
+  }
+  .programing_languages:nth-child(12) img{
+    padding-top: 100px;
+  }
+
+
+
+
