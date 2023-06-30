@@ -228,7 +228,6 @@ p {
   /* ABOUT US */
 
   .intro {
-    margin-top: 5px;
     padding: 0;
     position: relative;
     height: 250vh;
@@ -482,7 +481,7 @@ p {
     justify-content: space-evenly;
     gap: 50px;
     height: 250vh;
-    background: linear-gradient(#fff1eb 0%,  #41889c);
+    background: linear-gradient(#41889c 0%, #fff1eb);
   }
 
 
