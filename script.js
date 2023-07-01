@@ -166,6 +166,8 @@ document.addEventListener("DOMContentLoaded", function() {
           })
           .addTo(controller);
 
+
+
           const observer = new IntersectionObserver((entries) => {
 
             entries.forEach((entry) => {
@@ -177,13 +179,28 @@ document.addEventListener("DOMContentLoaded", function() {
               }
             });
           });
+
+          const observer2 = new IntersectionObserver((entries2) => {
+
+            entries2.forEach((entry) => {
+              console.log(entry)
+              if (entry.isIntersecting){
+                entry.target.classList.add('show2');
+              }else{
+                entry.target.classList.remove('show2');
+              }
+            });
+          });
           
           const programing_languages_element = document.querySelectorAll('.programing_languages');
-          const programing_languages_element2 = document.querySelectorAll('.programing_languages2');
+          const exp = document.querySelectorAll('.experience .section');
+
+
 
           programing_languages_element.forEach((el) => observer.observe(el));
-          programing_languages_element2.forEach((el) => observer.observe(el));
           
+          exp.forEach((el) => observer2.observe(el));
+
           
           
 
