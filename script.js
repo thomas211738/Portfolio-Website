@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
         shininess: 90.00,
         waveHeight: 17.00,
         waveSpeed: 1.35,
-        zoom: 1.8
         })
 
         var prevScrollPos = window.pageYOffset || document.documentElement.scrollTop;
