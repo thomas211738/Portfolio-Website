@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let pregressheight = (window.pageYOffset / totalheight) * 100;
     progress.style.height = pregressheight+ '%';
-    progress.style.zIndex = 5;
+    progress.style.zIndex = 20000;
 
   }
 
