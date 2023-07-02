@@ -522,6 +522,26 @@ p {
     padding-top: 100px;
   }
 
+/* Projects SECTION */
+.projects{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 250vh;
+  background: linear-gradient(#fff1eb 0%, #41889c);
+
+}
+
+.projects title h1{
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 0 0 10px black;
+  font-size: 70px;
+  text-align: center;
+  color: white;
+}
+
+
+
 /* Experience SECTION */
 
 .experience{
@@ -529,7 +549,7 @@ p {
   margin: 0;
   position: relative;
   height: 250vh;
-  background: linear-gradient(#fff1eb 0%, #41889c);
+  background: linear-gradient(#41889c 0%, #fff1eb);
 }  
 
 .experience .t{
@@ -620,6 +640,43 @@ p {
   
   font-size: 24px;
   padding: 10px;
+}
+
+/* Relavant Experience SECTION */
+.relevant_expereince{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 250vh;
+  background: linear-gradient(#fff1eb 0%, #41889c);
+
+}
+
+.relevant_expereince title h1{
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 0 0 10px black;
+  font-size: 70px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Contact Us SECTION */
+.contact{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 250vh;
+  background: linear-gradient(#41889c 0%, #fff1eb);
+
+}
+
+.contact title h1{
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 0 0 10px black;
+  font-size: 70px;
+  text-align: center;
+  color: white;
 }
 
 
