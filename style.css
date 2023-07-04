@@ -611,8 +611,8 @@ p {
 .experience{
   padding: 0;
   margin: 0;
+  height: 100vh;
   position: relative;
-  height: 80vh;
   background: linear-gradient(#41889c 0%, #fff1eb);
 }  
 
