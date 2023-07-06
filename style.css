@@ -799,18 +799,15 @@ p {
   display: flex;
   justify-content: space-around;
 }
-.contact .sectioncontainer section{
-  position: relative;
-}
 
-.contact ul{
+
+.contact ul{  
   content: '';
   width: 370px;
-  height: 110px;
+  height: 130px;
   position: absolute;
   background: rgba(48, 48, 48, 0.785);
-  border-radius: 100px;
-
+  border-radius: 50px;
 }
 
 
@@ -823,7 +820,8 @@ p {
 }
 
 
-.contact ul li a img{
+.contact ul li a img{  
+
   position: relative;
   display: inline-block;
   box-sizing: border-box;
@@ -844,10 +842,8 @@ p {
   padding: 0;
 }
 
-
-
-
 .contact ul li a{
+  margin-top: 11px;
   position: relative;
   display: inline-block;
   box-sizing: border-box;
@@ -859,11 +855,9 @@ p {
 }
 
 .contact ul li a:hover{
-  transform: translateY(-20px);
+  transform: translateY(-15px);
   
 }
-
-
 
 .contact ul li a::before{
   content: '';
