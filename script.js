@@ -162,21 +162,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         
 
-        // Initialize ScrollMagic controller
-        var controller = new ScrollMagic.Controller();
 
-        // Create a ScrollMagic scene
-        var scene = new ScrollMagic.Scene({
-          triggerElement: '.intro', // Element that triggers the animation
-          triggerHook: 2.5, // Adjust this value to trigger the animation at the desired scroll position
-        })
-          .on('enter', function () {
-            // Animate the element when it enters the trigger position
-            gsap.to('.gradient-text', { opacity: 1, scale: 1, duration: 2 });
-            gsap.to('.intro .header', { opacity: 1, scale: 1, duration: 2 });
-
-          })
-          .addTo(controller);
 
 
 
@@ -203,15 +189,38 @@ document.addEventListener("DOMContentLoaded", function() {
               }
             });
           });
+
+          const observer3 = new IntersectionObserver((entries3) => {
+
+            entries3.forEach((entry) => {
+              console.log(entry)
+              if (entry.isIntersecting){
+                entry.target.classList.add('show3');
+              }else{
+                entry.target.classList.remove('show3');
+              }
+            });
+          });
           
           const programing_languages_element = document.querySelectorAll('.programing_languages');
-          const exp = document.querySelectorAll('.experience .section');
+          const exp = document.querySelectorAll('.experience .section'); 
+          const about1 = document.querySelectorAll('.about1'); 
+          const about2 = document.querySelectorAll('.about2'); 
+          const aboutp = document.querySelectorAll('.paragraph');
+          const gr = document.querySelectorAll('.gradient-text');
+
 
 
 
           programing_languages_element.forEach((el) => observer.observe(el));
-          
           exp.forEach((el) => observer2.observe(el));
+          about1.forEach((el) => observer3.observe(el));
+          about2.forEach((el) => observer3.observe(el));
+          aboutp.forEach((el) => observer3.observe(el));
+
+
+
+          gr.forEach((el) => observer3.observe(el));
 
           
           

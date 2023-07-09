@@ -264,7 +264,7 @@ p {
     background: linear-gradient(#fff1eb 0%,  #41889c);
   }
 
-  .intro .header {
+  .intro .header{
     position: absolute;
     left: 36%;
     top: 1%;
@@ -273,15 +273,9 @@ p {
     text-align: center;
     font-size: 70px;
     align-items: flex-start;
-    transform: scale(0.7);
   }
   
 
-  .intro.in-view .intro .header {
-    opacity: 1;
-    transform: scale(1);
-  }
-  
   .gradient-text {
     position: absolute;
     left: 25%;
@@ -293,18 +287,19 @@ p {
     text-align: center;
     font-size: 90px;
     font-weight: bold;
-    opacity: 0;
-    transform: scale(0.3);
     font-family: 'Ubuntu', cursive;
     align-items: flex-end;
-    
-    
+
+    opacity: 0;
+    transform: scale(0.7);
+    filter: blur(5px);
+    transition: all 1s;
   }
+
+
+
   
-  .intro.in-view .gradient-text {
-    opacity: 1;
-    transform: scale(1);
-  }
+
 
   .intro .Thomas img {
     position: absolute;
@@ -460,6 +455,11 @@ p {
     font-size: 40px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
+
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
   }
 
   .about2{
@@ -469,9 +469,25 @@ p {
     font-size: 40px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
+
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
   }
 
-  .paragraph p{ 
+  .paragraph p{
+    top: 73%;
+    left: 20%;
+    font-size: 32px;
+    font-family: 'Patrick Hand', cursive;;
+    font-weight: 900;
+    text-align: left;
+
+
+  }
+
+  .paragraph{ 
     position: absolute;
     top: 73%;
     left: 20%;
@@ -479,7 +495,24 @@ p {
     font-family: 'Patrick Hand', cursive;;
     font-weight: 900;
     text-align: left;
-    padding-right: 200px;
+
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+
+
+  }
+
+
+
+
+
+  .show3{
+    opacity: 1;
+    transform: scale(1);
+    transform: translateX(0);
+    filter: blur(0);
   }
 
   /* TECHNICAL SKILLS SECTION */
@@ -636,7 +669,6 @@ p {
 .section {
   opacity: 0;
   display: flex;
-  
   position: relative;
   overflow: hidden; 
   margin-top: 200px;
