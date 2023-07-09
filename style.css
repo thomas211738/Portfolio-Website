@@ -744,6 +744,15 @@ p {
   color: white;
 }
 
+.relevant_expereince .line{
+  top: 250px;
+  left: 50%;
+  position: absolute;
+  border-left: 3px solid black;
+  height: 120vh;
+}
+
+
 .timeline {
   position: relative;
   padding-top: 150px;
@@ -783,13 +792,13 @@ p {
 }
 
 .container:nth-child(1){
-  margin-left: 350px;
+  margin-left: 400px;
 }
 .container:nth-child(2){
-  margin-left: -350px;
+  margin-left: -400px;
 }
 .container:nth-child(3){
-  margin-left: 350px;
+  margin-left: 400px;
 }
 
 
