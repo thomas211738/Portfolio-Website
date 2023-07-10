@@ -262,6 +262,7 @@ p {
     position: relative;
     height: 250vh;
     background: linear-gradient(#fff1eb 0%,  #41889c);
+
   }
 
   .intro .header{
@@ -348,7 +349,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; /* Updated this line */
-   
+    overflow: hidden;
   }
   
   .intro .description1 p {
@@ -359,6 +360,7 @@ p {
     padding-left: 25px;
     margin: 0; /* Added this line to remove default margin */
     text-align: left;
+    z-index: 5;
 
   }
 
@@ -367,6 +369,7 @@ p {
     margin-top: -15px;
     text-align: center;
     font-size: 36px;
+    z-index: 5;
   }
 
   .intro .description1 p:nth-child(4){
@@ -390,12 +393,14 @@ p {
     margin-top: -30px;
     margin-bottom: 0;
     padding-bottom: 0;
+    z-index: 5;
+
   }
   
   .intro .description2 {
     height: 270px;
     width: 600px;
-    background-color: rgba(48, 48, 48, 0.785);
+    background: rgba(48, 48, 48, 0.785);
     position: absolute;
     top: 50%;
     left: 54%;
@@ -403,6 +408,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly; /* Updated this line */
+    overflow: hidden;
    
   }
   
@@ -414,6 +420,8 @@ p {
     padding-left: 25px;
     margin: 0; /* Added this line to remove default margin */
     text-align: left;
+    z-index: 5;
+   
 
   }
 
@@ -422,6 +430,8 @@ p {
     margin-top: -15px;
     text-align: center;
     font-size: 36px;
+    z-index: 5;
+
   }
 
   .intro .description2 p:nth-child(4){
@@ -437,6 +447,7 @@ p {
     padding-left: 40px;  
     margin-top: -30px;
     font-family: 'Ubuntu', sans-serif;
+    z-index: 5;
 }
 
   .description2 hr {
@@ -445,8 +456,84 @@ p {
     margin-top: -30px;
     margin-bottom: 0;
     padding-bottom: 0;
+    z-index: 5;
+  }
+
+  .description1 .line{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 1;
+
+
+  }
+  .description2 .line{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 1;
+
+
+  }
+
+  .description1 .line::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 120px;
+    background: linear-gradient( transparent,rgb(255, 0, 0), rgb(255, 0, 0),  rgb(255, 0, 0),transparent);
+    animation: r 4s linear infinite;
+    animation-play-state: paused;
+  }
+  .description2 .line::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 120px;
+    background: linear-gradient(transparent, rgb(0, 0, 255), rgb(0, 0, 255),  rgb(0, 0, 255), transparent);
+    animation: r 4s linear infinite;
+    animation-play-state: paused;
+  }
+
+  @keyframes r {
+    0%{
+      transform: translate(-50%, -50%) rotate(0deg);
+    } 
+    100%{
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  .description1:hover .line::before{
+    animation-play-state: running;
+  }
+  .description2:hover .line::before{
+    animation-play-state: running;
   }
   
+  .description1::after{
+    content: '';
+    position: absolute;
+    inset: 7px;
+    background: rgba(48, 48, 48, 1);
+    border-radius: 50px;
+    z-index: 2;
+  }
+  .description2::after{
+    content: '';
+    position: absolute;
+    inset: 7px;
+    background: rgba(48, 48, 48, 1);
+    border-radius: 50px;
+    z-index: 2;
+  }
+
+
+
 
   .about1{
     position: absolute;
@@ -567,7 +654,7 @@ p {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 1.5s;
     display: inline-block;
   }
 
