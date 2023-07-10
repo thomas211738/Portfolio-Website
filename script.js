@@ -160,7 +160,15 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           prevScrollPos = scrollTop;
         });
+
+        var imgclick = document.getElementById('imgclick');
+
         
+        imgclick.addEventListener('click', function(){
+
+
+
+        });
 
 
 
@@ -201,6 +209,20 @@ document.addEventListener("DOMContentLoaded", function() {
               }
             });
           });
+
+          const observer4 = new IntersectionObserver((entries4) => {
+
+            entries4.forEach((entry) => {
+              console.log(entry)
+              if (entry.isIntersecting){
+                entry.target.classList.add('show4');
+              }else{
+                entry.target.classList.remove('show4');
+              }
+            });
+          });
+
+
           
           const programing_languages_element = document.querySelectorAll('.programing_languages');
           const exp = document.querySelectorAll('.experience .section'); 
@@ -208,6 +230,14 @@ document.addEventListener("DOMContentLoaded", function() {
           const about2 = document.querySelectorAll('.about2'); 
           const aboutp = document.querySelectorAll('.paragraph');
           const gr = document.querySelectorAll('.gradient-text');
+          const tt = document.querySelectorAll('.container');
+          const jt = document.querySelectorAll('.container2');
+
+          
+          
+          
+
+         
 
 
 
@@ -217,10 +247,10 @@ document.addEventListener("DOMContentLoaded", function() {
           about1.forEach((el) => observer3.observe(el));
           about2.forEach((el) => observer3.observe(el));
           aboutp.forEach((el) => observer3.observe(el));
-
-
-
           gr.forEach((el) => observer3.observe(el));
+          tt.forEach((el) => observer4.observe(el));
+          jt.forEach((el) => observer4.observe(el));
+
 
           
           
