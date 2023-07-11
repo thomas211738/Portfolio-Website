@@ -977,7 +977,7 @@ p {
   padding: 0;
   margin: 0;
   position: relative;
-  height: 225vh;
+  height: 300vh;
   background: linear-gradient(#fff1eb 0%, #41889c);
 
 }
@@ -1059,13 +1059,10 @@ p {
   position: relative;
   padding: 20px;
   width: 300px;
-  height: 300px;
   background: #2e2e2e50;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
@@ -1084,7 +1081,6 @@ p {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   opacity: 0;
   filter: blur(5px);
@@ -1092,9 +1088,6 @@ p {
   transition: all 1.5s;
 
 }
-
-
-
 
 .timeline:nth-child(1){
   margin-left: 300px;
@@ -1105,11 +1098,57 @@ p {
   
 }
 
-
 .show4{
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+
+}
+
+.container h1{
+  text-align: center;
+  margin: 0;
+
+}
+.container h2{
+  text-align: left;
+  font-size: 14px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: bold;
+
+}
+.container h3{
+  text-align: left;
+  color: white;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  font-weight: bold;
+
+
+
+}
+.container h4{
+  text-align: left;
+  color: white;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  font-weight: bold;
+
+
+
+
+}
+
+
+.container p{
+  text-align: left;
+  font-family: 'Patrick Hand', cursive;;
+  font-size: 20px;
 
 }
 
