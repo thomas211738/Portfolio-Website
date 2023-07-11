@@ -1013,7 +1013,7 @@ p {
   left: 50%;
   position: absolute;
   border-left: 3px solid black;
-  height: 120vh;
+  height: 195vh;
 }
 
 .line::before,
