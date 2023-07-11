@@ -773,7 +773,7 @@ p {
   padding: 15px;
   padding-top: 0;
   padding-bottom: 0;
-  text-align: left;
+  text-align: justify;
   opacity: 0;
   transition: opacity 1s ease;
   font-family: 'Patrick Hand', cursive;
