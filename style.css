@@ -147,6 +147,31 @@ header.sticky ul li a{
   color: #000;
 }
 
+.sticky .navbar li a:before{
+  background-color: #000000;
+
+
+}
+
+
+
+.navbar li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar li a:hover:before {
+  width: 100%;
+}
+
+
+
 .content {
     position: absolute;
     top: 50%;

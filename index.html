@@ -17,62 +17,68 @@
 
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Portfolio</a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Involvement</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </header>
-    <script>
-        window.addEventListener("scroll", function(){
-            var header = this.document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-          })
-    </script>
-
-    <div id="progressbar"></div>
-    <div class="scrollpath"></div>
-    <div class="welcome"></div>
-
-        <div id="background"></div>
-        <div class="content">
-            <h1 id="typewriter">We are</h1>
-            <p>SCROLL DOWN</p>
+    <section id="home">
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#ts">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#involvement">Involvement</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <script>
+            window.addEventListener("scroll", function(){
+                var header = this.document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+              })
+        </script>
+    
+        <div id="progressbar"></div>
+        <div class="scrollpath"></div>
+        <div class="welcome"></div>
+    
+            <div id="background"></div>
+            <div class="content">
+                <h1 id="typewriter">We are</h1>
+                <p>SCROLL DOWN</p>
+            </div>
+            
+    
+        <div id="parachute-section">
+    
+            <div class="parachute-animation">
+              <img src="p.png" alt="Parachuting Guy">  
+            </div>
+    
+            <div class="parachute-animation" id="parachute-2">
+                <img src="p.png" alt="Parachuting Guy">
+            </div>
+    
+            <div class="rocket-animation">
+                <img src="Rocket.png" alt="Rocket">  
+            </div>
+    
+            <div class="light"></div> 
+    
+            <div class="man">
+                <img src="Other Standing Man Small.png" alt="Man">  
+            </div>
+    
+            <div class="man" id="man2"> 
+                <img src="Standing Man Small.png" alt="Man">  
+            </div>
+    
         </div>
-        
+          
 
-    <div id="parachute-section">
+    </section>
 
-        <div class="parachute-animation">
-          <img src="p.png" alt="Parachuting Guy">  
-        </div>
+    <section id="about">
 
-        <div class="parachute-animation" id="parachute-2">
-            <img src="p.png" alt="Parachuting Guy">
-        </div>
-
-        <div class="rocket-animation">
-            <img src="Rocket.png" alt="Rocket">  
-        </div>
-
-        <div class="light"></div> 
-
-        <div class="man">
-            <img src="Other Standing Man Small.png" alt="Man">  
-        </div>
-
-        <div class="man" id="man2"> 
-            <img src="Standing Man Small.png" alt="Man">  
-        </div>
-
-    </div>
-      
       <div class="intro">
         <div class="background3"></div>
         
@@ -116,7 +122,11 @@
         <h2 class="about2"> &lt;about&gt; </h2>
         
       </div>
-      
+
+    </section>
+
+    <section id="ts">
+         
       <div class="technical_skills">
         <div class="title">
             <h1>Technical Skills</h1>
@@ -172,41 +182,49 @@
         </div>      
       </div>
 
-    <div class="projects">
-        <div class="title">
-            <h1>Projects</h1>
-        </div>
+    </section>
 
-        <div class="projectcontainer">
-            <div class="project">
-                <img class="icon" src="stock.png" alt="Stock">
-                <h1>Sentiment Driven Stock Selector</h1>
-                <p>
-                    This project gathers daily headlines for each S&P 500 company. It then collects headlines for each company and assigns a polarity score to them. 
-                    Finally, it compares these sentiment scores with the percentage change in the stock price from yesterday's closing price to today's open price.</p>
-                <div class="pimg">
-                    <img src="python.gif" alt="P">
-                </div>
-                <button onclick="window.location.href = 'https://github.com/thomas211738/Sentiment-Driven-Stock-Selector#sentiment-driven-stock-selector';">GitHub</button>
-                <div class="pline"></div>
-            </div>
-            <div class="project">
-                <img class="icon" src="computer.png" alt="Comp">
-                <h1>Portfolio Website</h1>
-                <p>This website highlights our personal portfolios and using complex animations and designs. Through javascript, css, and html we display our projects, expierences, technical skills, etc. This site gets occasionally updated with our most recent information.</p>
-                <div class="pimg">
-                    <img  src="html.gif" alt="HTML">
-                    <img  src="css.gif" alt="CSS">
-                    <img  src="js.gif" alt="JS">
-                </div>
-                <button onclick="window.location.href = 'https://github.com/thomas211738/Portfolio-Website';">GitHub</button>
-                <div class="pline"></div>
-            </div>
-            
-        </div>
 
-    </div>  
-        
+
+     <section id="project">
+        <div class="projects">
+            <div class="title">
+                <h1>Projects</h1>
+            </div>
+    
+            <div class="projectcontainer">
+                <div class="project">
+                    <img class="icon" src="stock.png" alt="Stock">
+                    <h1>Sentiment Driven Stock Selector</h1>
+                    <p>
+                        This project gathers daily headlines for each S&P 500 company. It then collects headlines for each company and assigns a polarity score to them. 
+                        Finally, it compares these sentiment scores with the percentage change in the stock price from yesterday's closing price to today's open price.</p>
+                    <div class="pimg">
+                        <img src="python.gif" alt="P">
+                    </div>
+                    <button onclick="window.location.href = 'https://github.com/thomas211738/Sentiment-Driven-Stock-Selector#sentiment-driven-stock-selector';">GitHub</button>
+                    <div class="pline"></div>
+                </div>
+                <div class="project">
+                    <img class="icon" src="computer.png" alt="Comp">
+                    <h1>Portfolio Website</h1>
+                    <p>This website highlights our personal portfolios and using complex animations and designs. Through javascript, css, and html we display our projects, expierences, technical skills, etc. This site gets occasionally updated with our most recent information.</p>
+                    <div class="pimg">
+                        <img  src="html.gif" alt="HTML">
+                        <img  src="css.gif" alt="CSS">
+                        <img  src="js.gif" alt="JS">
+                    </div>
+                    <button onclick="window.location.href = 'https://github.com/thomas211738/Portfolio-Website';">GitHub</button>
+                    <div class="pline"></div>
+                </div>
+                
+            </div>
+    
+        </div>      
+     </section>
+
+     <section id="involvement">
+
     
     <div class="experience">
         <div class="t">
@@ -235,6 +253,9 @@
             
         </div>
     </div>
+     </section>
+
+     <section id="experience">
 
     <div class="relevant_expereince">
         <div class="title">
@@ -297,6 +318,10 @@
 
     </div>
 
+     </section>
+
+     <section id="contact">
+
     <div class="contact">
         <div class="title">
             <h1>Contact Us</h1>
@@ -323,6 +348,12 @@
         </div>
         
     </div>
+
+
+     </section>
+
+
+    
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
