@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var targetPosition = targetElement.offsetTop;
         var startPosition = window.pageYOffset;
         var distance = targetPosition - startPosition;
-        var duration = 1000; // Adjust scrolling duration (in milliseconds) as needed
+        var duration = 1500; // Adjust scrolling duration (in milliseconds) as needed
   
         var startTime = null;
   
@@ -207,16 +207,6 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           prevScrollPos = scrollTop;
         });
-
-        var imgclick = document.getElementById('imgclick');
-
-        
-        imgclick.addEventListener('click', function(){
-
-
-
-        });
-
 
 
 
