@@ -734,7 +734,7 @@ p {
   padding: 0;
   margin: 0;
   position: relative;
-  height: 120vh;
+  height: 135vh;
   background: linear-gradient(#fff1eb 0%, #41889c);
 
 }
@@ -849,12 +849,12 @@ p {
 
 .projects .projectcontainer .project:nth-child(1):hover{
   width: 360px;
-  height: 550px;
+  height: 590px;
 
 }
 .projects .projectcontainer .project:hover {
   width: 360px;
-  height: 510px;
+  height: 550px;
 }
 
 .projects .projectcontainer .project h1,
