@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const sentences = [
     "Thomas and Josh",
     "Data Scientists",
-    "Quantatative Analysts",
+    "Quantitative Analysts",
     "Software Engineers",
     "Financial Analysts"
   ];
