@@ -270,14 +270,6 @@ document.addEventListener("DOMContentLoaded", function() {
           const tt = document.querySelectorAll('.container');
           const jt = document.querySelectorAll('.container2');
 
-          
-          
-          
-
-         
-
-
-
 
           programing_languages_element.forEach((el) => observer.observe(el));
           exp.forEach((el) => observer2.observe(el));
@@ -287,12 +279,6 @@ document.addEventListener("DOMContentLoaded", function() {
           gr.forEach((el) => observer3.observe(el));
           tt.forEach((el) => observer4.observe(el));
           jt.forEach((el) => observer4.observe(el));
-
-
-          
-          
-
-
 });
 
 
