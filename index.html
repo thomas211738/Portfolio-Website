@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Blaka+Ink&family=Bungee+Spice&family=Caprasimo&family=Foldit:wght@600&family=Nabla&family=Pacifico&family=Patrick+Hand&family=Ubuntu:wght@300&display=swap" rel="stylesheet">   
-     <title>Thomas and Josh's Website</title>
-     
-    <link rel="stylesheet" href="style.css">
-
-    <script src="script.js"></script>
-    <!-- ScrollMagic library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-
-    <!-- GSAP animation library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Patrick+Hand&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <title>Thomas and Josh's Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section id="home">
         <header>
             <a href="#" class="logo">Portfolio</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="navbar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -28,337 +26,388 @@
                 <li><a href="#involvement">Involvement</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="assignments.html">Assignments</a></li>
                 <li><a href="resume.html">Thomas's Resume</a></li>
             </ul>
         </header>
-        <script>
-            window.addEventListener("scroll", function(){
-                var header = this.document.querySelector("header");
-                header.classList.toggle("sticky", window.scrollY > 0);
-              })
-        </script>
-    
+
         <div id="progressbar"></div>
         <div class="scrollpath"></div>
         <div class="welcome"></div>
-    
-            <div id="background"></div>
-            <div class="content">
-                <h1 id="typewriter">We are</h1>
-                <p>SCROLL DOWN</p>
-            </div>
-            
-    
-        <div id="parachute-section">
-    
-            <div class="parachute-animation">
-              <img src="p.png" alt="Parachuting Guy">  
-            </div>
-    
-            <div class="parachute-animation" id="parachute-2">
-                <img src="p.png" alt="Parachuting Guy">
-            </div>
-    
-            <div class="rocket-animation">
-                <img src="Rocket.png" alt="Rocket">  
-            </div>
-    
-            <div class="light"></div> 
-    
-            <div class="man">
-                <img src="Other Standing Man Small.png" alt="Man">  
-            </div>
-    
-            <div class="man" id="man2"> 
-                <img src="Standing Man Small.png" alt="Man">  
-            </div>
-    
-        </div>
-          
 
+        <div id="background"></div>
+        <div class="content">
+            <h1 id="typewriter">We are</h1>
+            <p>SCROLL DOWN</p>
+        </div>
+
+        <div id="parachute-section">
+            <div class="parachute-animation">
+                <img src="images/p.png" alt="Parachuting Guy">
+            </div>
+            <div class="parachute-animation" id="parachute-2">
+                <img src="images/p.png" alt="Parachuting Guy">
+            </div>
+            <div class="rocket-animation">
+                <img src="images/Rocket.png" alt="Rocket">
+            </div>
+            <div class="light"></div>
+            <div class="man">
+                <img src="images/Other Standing Man Small.png" alt="Man" loading="lazy">
+            </div>
+            <div class="man" id="man2">
+                <img src="images/Standing Man Small.png" alt="Man" loading="lazy">
+            </div>
+        </div>
     </section>
 
     <section id="about">
+        <div class="intro">
+            <div class="background3"></div>
 
-      <div class="intro">
-        <div class="background3"></div>
-        
+            <h1 class="header">ABOUT US</h1>
+            <h1 class="gradient-text">Hi, we are <br>Thomas and Josh</h1>
 
-        <h1 class="header">ABOUT US</h1>
-        <h1 class="gradient-text">Hi, we are <br>Thomas and Josh</h1>
-        <div class="Thomas">
-            <img src="Thomas 1.jpg" alt="Thomas Pic">
+            <div class="Thomas">
+                <img src="images/Thomas 1.jpg" alt="Thomas Pic" loading="lazy">
+            </div>
+            <div class="Josh">
+                <img src="images/Josh re 2.jpg" alt="Josh Pic" loading="lazy">
+            </div>
+
+            <div class="description1">
+                <p>Thomas Yousef</p>
+                <p>EDUCATION</p>
+                <hr>
+                <p>Boston University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Expected 2026</p>
+                <p>B.S. in Data Science, <br>Minor in Business Administration</p>
+                <div class="line"></div>
+            </div>
+
+            <div class="description2">
+                <p>Joshua Leeds</p>
+                <p>EDUCATION</p>
+                <hr>
+                <p>Boston University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Expected 2026</p>
+                <p>B.S. in Data Science, <br>Minor in Business Administration</p>
+                <div class="line"></div>
+            </div>
+
+            <h2 class="about1"> &lt;about&gt; </h2>
+            <div class="paragraph">
+                <p>We are Passionate Data Science students attending Boston University. <br><br>
+                With an interest in technology, data, and business, we are constantly exploring the world of data analytics, machine learning, and artificial intelligence.
+                Through our coursework, practical experience, and personal projects, we have developed a strong foundation in statistical analysis, programming, and data visualization techniques. <br><br>
+                Explore skills and experiences that we share as well as ones unique to each of us</p>
+            </div>
+            <h2 class="about2"> &lt;about&gt; </h2>
         </div>
-
-        <div class="Josh">
-            <img src="Josh re 2.jpg" alt="Josh Pic">
-        </div>
-    
-        <div class="description1">
-            <p> Thomas Yousef</p>
-            <p>EDUCATION</p>
-            <hr>
-            <p>Boston University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Expected 2026</p>
-            <p>B.S. in Data Science, <br>Minor in Business Administration</p>
-            <div class="line"></div>
-
-        </div>
-
-        <div class="description2">
-            <p> Joshua Leeds</p>
-            <p>EDUCATION</p>
-            <hr>
-            <p>Boston University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Expected 2026</p>
-            <p>B.S. in Data Science, <br>Minor in Business Administration</p>
-            <div class="line"></div>
-
-        </div>    
-
-        <h2 class="about1"> &lt;about&gt; </h2>
-        <div class="paragraph"><p>We are Passionate Data Science students attending Boston University. <br> <br>
-            With an interest in technology, data, and business, we are constantly exploring the  world of data analytics, machine learning, and artificial intelligence.
-            Through our coursework, practical experience, and personal projects, we have developed a strong foundation in statistical analysis, programming, and data visualization techniques. <br> <br>
-            Explore skills and experiences that we share as well as ones unique to each of us</p> 
-        </div>   
-        <h2 class="about2"> &lt;about&gt; </h2>
-        
-      </div>
-
     </section>
 
     <section id="ts">
-         
-      <div class="technical_skills">
-        <div class="title">
-            <h1>Technical Skills</h1>
+        <div class="technical_skills">
+            <div class="title">
+                <h1>Technical Skills</h1>
+            </div>
+            <div class="programing_languages">
+                <img src="images/python.gif" alt="Python" loading="lazy">
+                <p>Python</p>
+            </div>
+            <div class="programing_languages">
+                <img src="images/java.gif" alt="Java" loading="lazy">
+                <p>Java</p>
+            </div>
+            <div class="programing_languages">
+                <img src="images/css.gif" alt="CSS" loading="lazy">
+                <p>CSS</p>
+            </div>
+            <div class="programing_languages">
+                <img src="images/html.gif" alt="HTML" loading="lazy">
+                <p>HTML</p>
+            </div>
+            <div class="programing_languages">
+                <img src="images/js.gif" alt="JavaScript" loading="lazy">
+                <p>Java Script</p>
+            </div>
+            <div class="programing_languages">
+                <img src="images/git.gif" alt="GIT" loading="lazy">
+                <p>GIT</p>
+            </div>
+            <div class="programing_languages">
+                <img src="images/vscodelogo.png" alt="VS Code" loading="lazy">
+                <p>VS Code</p>
+            </div>
+            <div class="programing_languages">
+                <img src="images/Xcodelogo.png" alt="X Code" loading="lazy">
+                <p>X Code</p>
+            </div>
+            <div class="programing_languages">
+                <img src="images/pycharmlogo.png" alt="Py Charm" loading="lazy">
+                <p>Py Charm</p>
+            </div>
+            <div class="programing_languages">
+                <img src="images/azure.png" alt="Azure" loading="lazy">
+                <p>Azure</p>
+            </div>
+            <div class="programing_languages">
+                <img src="images/sklearn.png" alt="SK Learn" loading="lazy">
+                <p>SK Learn</p>
+            </div>
+            <div class="programing_languages">
+                <img src="images/Tensorflow.png" alt="TensorFlow" loading="lazy">
+                <p>TensorFlow</p>
+            </div>
         </div>
-        <div class="programing_languages">
-            <img src="python.gif" alt="Python">
-            <p>Python</p>
-        </div>
-        <div class="programing_languages">
-            <img src="java.gif" alt="Java" loop>
-            <p>Java</p>
-        </div>
-        <div class="programing_languages">
-            <img src="css.gif" alt="CSS">
-            <p>CSS</p>
-        </div>
-        <div class="programing_languages">
-            <img src="html.gif" alt="HTML" >
-            <p>HTML</p>
-        </div>
-        <div class="programing_languages">
-            <img src="js.gif" alt="JavaScript">
-            <p>Java Script</p>
-        </div>    
-        <div class="programing_languages">
-            <img src="git.gif" alt="GIT" >
-            <p>GIT</p>
-        </div>
-        <div class="programing_languages">
-            <img src="vscodelogo.png" alt="VS Code">
-            <p>VS Code</p>
-        </div>    
-        <div class="programing_languages">
-            <img src="Xcodelogo.png" alt="X Code">
-            <p>X Code</p>
-        </div>
-
-        <div class="programing_languages">
-            <img src="pycharmlogo.png" alt="Py Charm" loop>
-            <p>Py Charm</p>
-        </div>
-        <div class="programing_languages">
-            <img src="azure.png" alt="Azure" loop>
-            <p>Azure</p>
-        </div>
-        <div class="programing_languages">
-            <img src="sklearn.png" alt="SK Learn" >
-            <p>SK Learn</p>
-        </div>
-        <div class="programing_languages">
-            <img src="Tensorflow.png" alt="TensorFlow">
-            <p>TensorFlow</p>  
-        </div>      
-      </div>
-
     </section>
 
-
-
-     <section id="project">
+    <section id="project">
         <div class="projects">
             <div class="title">
                 <h1>Projects</h1>
             </div>
-    
             <div class="projectcontainer">
+
+                <!-- KTP Mobile App -->
                 <div class="project">
-                    <img class="icon" src="stock.png" alt="Stock">
+                    <div class="project-icon">📱</div>
+                    <h1>Boston KTP App</h1>
+                    <p>Full-stack mobile app for Kappa Theta Pi built with React Native, Expo, Node.js, Firebase, and MongoDB. Serves 300+ active users with 1,000+ daily database invocations via REST. Integrated Google OAuth with persistent secure sessions.</p>
+                    <div class="tech-badges">
+                        <span class="badge">React Native</span>
+                        <span class="badge">Expo</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">Firebase</span>
+                        <span class="badge">MongoDB</span>
+                    </div>
+                    <div class="project-btn-group">
+                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738/KTP_Activities')">⌥ GitHub</button>
+                        <!-- TODO: replace # with the actual App Store URL -->
+                        <button class="project-btn live" onclick="window.open('#')"> App Store</button>
+                    </div>
+                </div>
+
+                <!-- KTP Website -->
+                <div class="project">
+                    <div class="project-icon">🌐</div>
+                    <h1>KTP Boston Website</h1>
+                    <p>Designed and developed the official Kappa Theta Pi Boston University chapter website. Built with React and TypeScript, the site serves as the public face for recruitment, events, and member resources for 300+ chapter members.</p>
+                    <div class="tech-badges">
+                        <span class="badge">React</span>
+                        <span class="badge">TypeScript</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">CSS</span>
+                    </div>
+                    <div class="project-btn-group">
+                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738/website')">⌥ GitHub</button>
+                        <button class="project-btn live" onclick="window.open('https://ktp-bostonu.com/')"> Live Site</button>
+                    </div>
+                </div>
+
+                <!-- Stock Clustering -->
+                <div class="project">
+                    <div class="project-icon">📊</div>
+                    <h1>Stock Clustering Model</h1>
+                    <p>Web app that analyzes user stock portfolios using volatility scoring and historical data to recommend lower-risk, same-sector substitutes. K-means clustering on S&P 500 via dividend yield, volume, and profit margin to predict future portfolio performance.</p>
+                    <div class="tech-badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">React</span>
+                        <span class="badge">Flask</span>
+                        <span class="badge">scikit-learn</span>
+                        <span class="badge">Pandas</span>
+                    </div>
+                    <div class="project-btn-group">
+                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738/cs506-final-project')">⌥ GitHub</button>
+                    </div>
+                </div>
+
+                <!-- Sports Betting Arbitrage -->
+                <div class="project">
+                    <div class="project-icon">🎯</div>
+                    <h1>Sports Betting Arbitrage</h1>
+                    <p>Python arbitrage detection system using the Odds-API to aggregate live betting odds across 15+ sportsbooks and 70 sports. Collects and compares sportsbook data every 5 minutes in real time, identifying timing-based arbitrage opportunities across platforms.</p>
+                    <div class="tech-badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">Odds-API</span>
+                        <span class="badge">REST</span>
+                        <span class="badge">Jupyter</span>
+                    </div>
+                    <div class="project-btn-group">
+                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738/SBA')">⌥ GitHub</button>
+                    </div>
+                </div>
+
+                <!-- COVID-19 Policy -->
+                <div class="project">
+                    <div class="project-icon">🏥</div>
+                    <h1>COVID-19 Policy Efficiency</h1>
+                    <p>Led a team to build a data pipeline on Azure that extracted, cleaned, loaded, and analyzed COVID-19 policy data to identify the most effective interventions in reducing case counts. Created a galaxy schema in an Azure ODS loaded into an Azure Synapse warehouse, connected to PowerBI.</p>
+                    <div class="tech-badges">
+                        <span class="badge">Azure</span>
+                        <span class="badge">Azure Synapse</span>
+                        <span class="badge">PowerBI</span>
+                        <span class="badge">Python</span>
+                        <span class="badge">SQL</span>
+                    </div>
+                    <div class="project-btn-group">
+                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738')">⌥ GitHub</button>
+                    </div>
+                </div>
+
+                <!-- Sentiment Stock -->
+                <div class="project">
+                    <div class="project-icon">📰</div>
                     <h1>Sentiment Driven Stock Selector</h1>
-                    <p>
-                        This project gathers daily headlines for each S&P 500 company. It then collects headlines for each company and assigns a polarity score to them. 
-                        Finally, it compares these sentiment scores with the percentage change in the stock price from yesterday's closing price to today's open price.</p>
-                    <div class="pimg">
-                        <img src="python.gif" alt="P">
+                    <p>Engineered a sentiment analysis pipeline with Python and NLTK to scrape and analyze 100 daily headlines per S&P 500 company. Discovered strong positive sentiment–return correlations in 60+ companies, demonstrating the predictive potential of news sentiment in equity performance.</p>
+                    <div class="tech-badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">NLTK</span>
+                        <span class="badge">Pandas</span>
+                        <span class="badge">BeautifulSoup</span>
                     </div>
-                    <button onclick="window.location.href = 'https://github.com/thomas211738/Sentiment-Driven-Stock-Selector#sentiment-driven-stock-selector';">GitHub</button>
-                    <div class="pline"></div>
-                </div>
-                <div class="project">
-                    <img class="icon" src="computer.png" alt="Comp">
-                    <h1>Portfolio Website</h1>
-                    <p>This website highlights our personal portfolios and using complex animations and designs. Through javascript, css, and html we display our projects, expierences, technical skills, etc. This site gets occasionally updated with our most recent information.</p>
-                    <div class="pimg">
-                        <img  src="html.gif" alt="HTML">
-                        <img  src="css.gif" alt="CSS">
-                        <img  src="js.gif" alt="JS">
+                    <div class="project-btn-group">
+                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738/Sentiment-Driven-Stock-Selector')">⌥ GitHub</button>
                     </div>
-                    <button onclick="window.location.href = 'https://github.com/thomas211738/Portfolio-Website';">GitHub</button>
-                    <div class="pline"></div>
                 </div>
-                
+
             </div>
-    
-        </div>      
-     </section>
-
-     <section id="involvement">
-
-    
-    <div class="experience">
-        <div class="t">
-            <h1>Leadership and Involvement</h1>
         </div>
-        <div class="section">
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
-            
-            <div class="image-container">
-                <img src="Zoomed Group Pic (With Eboard) 1.jpeg" alt="Image">
+    </section>
+
+    <section id="involvement">
+        <div class="experience">
+            <div class="t">
+                <h1>Leadership and Involvement</h1>
             </div>
-            
-            <div class="text-container">
-                <h2>KTP Professional Technology Fraternity</h2>
-                <p>Members of the Alpha Class of KTP </p>
-                <div class="icons">
-                    <a href="https://ktpbostonu.com/">
-                        <img src="website.png" alt="website">
-                    </a>
-                    <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/">
-                        <img src="linkedin1.png" alt="Linked in">
-                    </a>
+
+            <!-- Kappa Theta Pi -->
+            <div class="section">
+                <div class="image-container">
+                    <img src="images/Zoomed Group Pic (With Eboard) 1.jpeg" alt="KTP Group Photo" loading="lazy">
+                </div>
+                <div class="text-container">
+                    <h2>Kappa Theta Pi Technology Fraternity</h2>
+                    <p>Member of the Alpha Class of KTP at Boston University. Built and maintain the official <strong>KTP mobile app</strong> (React Native · Node.js · Firebase · MongoDB), serving 300+ active members with 1,000+ daily database invocations. Also designed and developed the official <strong>KTP Boston website</strong> (ktp-bostonu.com) using React and TypeScript.</p>
+                    <div class="icons">
+                        <a href="https://ktp-bostonu.com/">
+                            <img src="images/website.png" alt="KTP Website" loading="lazy">
+                        </a>
+                        <a href="https://www.linkedin.com/company/kappa-theta-pi-lambda-chapter/">
+                            <img src="images/linkedin1.png" alt="KTP LinkedIn" loading="lazy">
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-        </div>
-    </div>
-     </section>
 
-     <section id="experience">
-
-    <div class="relevant_expereince">
-        <div class="title">
-            <h1>Experience</h1>
-        </div>
-        <div class="imgcontainer">
-            <img src="Thomas 1.jpg" alt="Thomas Pic">
-            <img src="Josh re 2.jpg" alt="Josh Pic">
-        </div>
-        <div class="line"></div>
-        <div class="timeline_container">
-            <div class="timeline">
-                <div id="c1" class="container">
-                    <h1>Research Assistant</h1>
-                    <h2>GLOB~S Research Lab</h2>
-                    <h3>AUG 2024 - Present</h3>
-                    <h4>Boston, MA</h4>
-                    <p>Applied multi-period Difference-in-Differences (DiD) models to analyze changes in patent activity growth rates in New Orleans vs. other counties before and after Hurricane Katrina. Utilized statsmodels library in Python to implement the statistical models and test hypotheses.</p>
+            <!-- BU Finance and Investments Club -->
+            <div class="section">
+                <div class="image-container finance-bg">
+                    <div class="finance-symbol">📈</div>
                 </div>
-                <div id="c1" class="container">
-                    <h1>Global IT Enterprise Solutions Intern</h1>
-                    <h2>Fresenius Medical Care</h2>
-                    <h3>Jun 2024 - Aug 2024</h3>
-                    <h4>Lexington, MA</h4>
-                    <p>Specialized as a features engineer, utilizing Next.js, React.js, and Node.js to develop web components and designed backend schema using AWS SAM and connected it to a DynamoDB database for data storage. Conducted comprehensive testing, ensuring functionality, accuracy, and business requirements</p>
-                </div>
-                <div id="c1" class="container">
-                    <h1>Assistant VP of Quantitative Division</h1>
+                <div class="text-container">
                     <h2>BU Finance and Investments Club</h2>
-                    <h3>Sep 2023 - Present</h3>
-                    <h4>Boston, MA</h4>
-                    <p>Gave lectures to junior developers on finance topics including Binomial Options Pricing Models, Modern Portfolio Theory, Monte Carlo Methods, and more. Led multiple projects every semester that were presented to  club members, executive board, BU professors, and industry professionals.</p>
+                    <p><strong>Assistant VP of Quantitative Research</strong> — organized and delivered lectures to junior developers on Binomial Options Pricing Models, Modern Portfolio Theory, and Monte Carlo Methods. Led quantitative finance projects each semester, presenting findings to club members, the executive board, BU professors, and industry professionals.</p>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/company/bu-finance-investments-club/">
+                            <img src="images/linkedin1.png" alt="BU Finance LinkedIn" loading="lazy">
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="timeline">
-                <div id="c2" class="container2">
-                    <h1>Data Analyst Intern</h1>
-                    <h2>Comcast</h2>
-                    <h3>Summer 2024</h3>
-                    <h4>Denver, Colorado</h4>
-                    <p>Led analysis of Xfinity subscriber base to identify potential future growth and marketing opportunities. Conducted data discovery using SQL across multiple databases to build comprehensive data sources and tables. Created descriptive visualizations with Tableau and presented findings to senior management.</p>
+
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="relevant_expereince">
+            <div class="title">
+                <h1>Experience</h1>
+            </div>
+            <div class="imgcontainer">
+                <img src="images/Thomas 1.jpg" alt="Thomas Pic" loading="lazy">
+                <img src="images/Josh re 2.jpg" alt="Josh Pic" loading="lazy">
+            </div>
+            <div class="line"></div>
+            <div class="timeline_container">
+                <div class="timeline">
+                    <div id="exp-t1" class="container">
+                        <h1>Data Science Summer Analyst</h1>
+                        <h2>JP Morgan Chase</h2>
+                        <h3>Jun 2025 – Aug 2025</h3>
+                        <h4>Wilmington, DE</h4>
+                        <p>Built and tuned an XGBoost regression model to forecast Chase's total daily customer spend across all debit and credit card transactions nationwide, applying feature engineering and time series techniques. Achieved 1.5% and 1.9% error across two testing rounds, enabling better strategic planning and anomaly detection.</p>
+                    </div>
+                    <div id="exp-t2" class="container">
+                        <h1>Global IT Enterprise Solutions Intern</h1>
+                        <h2>Fresenius Medical Care</h2>
+                        <h3>Jun 2024 – Aug 2024</h3>
+                        <h4>Lexington, MA</h4>
+                        <p>Developed scalable web components using React.js and Node.js, and designed backend architecture with AWS SAM integrated with DynamoDB for efficient data storage. Executed end-to-end testing to validate functionality, data accuracy, and alignment with business requirements.</p>
+                    </div>
+                    <div id="exp-t3" class="container">
+                        <h1>Assistant VP of Quantitative Research</h1>
+                        <h2>BU Finance and Investments Club</h2>
+                        <h3>Sep 2023 – Present</h3>
+                        <h4>Boston, MA</h4>
+                        <p>Organized lectures for junior developers on complex finance topics including Binomial Options Pricing Models, Modern Portfolio Theory, and Monte Carlo Methods. Led multiple projects each semester presented to club members, the executive board, BU professors, and industry professionals.</p>
+                    </div>
                 </div>
-                <div id="c2" class="container2">
-                    <h1>Data Science Course Assistant</h1>
-                    <h2>Boston University</h2>
-                    <h3>Jan 2023 - Present</h3>
-                    <h4>Boston, Massachusetts</h4>
-                    <p>Host weekly office hours to help students with Python, Rust, data structures, algorithms, and data analysis. Grade assignments and provide students with advice and feedback.</p>
-                    
-                </div>
-                <div id="c2" class="container2">
-                    <h1>Quantitative Developer</h1>
-                    <h2>BU Finance & Investments Club</h2>
-                    <h3>Sept 2023 - Present</h3>
-                    <h4>Boston, Massachusetts</h4>
-                    <p>Lead a quantitative finance project with a team of 4 developers to research the NYSE and other global markets using Python; utilize NumPy, pandas, Matplotlib, and yfinance libraries. Work with other groups and projects to analyze, predict, and further research the stock market.</p>
+                <div class="timeline">
+                    <div id="exp-j1" class="container2">
+                        <h1>Data Analyst Intern</h1>
+                        <h2>Comcast</h2>
+                        <h3>Summer 2024</h3>
+                        <h4>Denver, Colorado</h4>
+                        <p>Led analysis of Xfinity subscriber base to identify potential future growth and marketing opportunities. Conducted data discovery using SQL across multiple databases to build comprehensive data sources and tables. Created descriptive visualizations with Tableau and presented findings to senior management.</p>
+                    </div>
+                    <div id="exp-j2" class="container2">
+                        <h1>Data Science Course Assistant</h1>
+                        <h2>Boston University</h2>
+                        <h3>Jan 2023 - Present</h3>
+                        <h4>Boston, Massachusetts</h4>
+                        <p>Host weekly office hours to help students with Python, Rust, data structures, algorithms, and data analysis. Grade assignments and provide students with advice and feedback.</p>
+                    </div>
+                    <div id="exp-j3" class="container2">
+                        <h1>Quantitative Developer</h1>
+                        <h2>BU Finance &amp; Investments Club</h2>
+                        <h3>Sept 2023 - Present</h3>
+                        <h4>Boston, Massachusetts</h4>
+                        <p>Lead a quantitative finance project with a team of 4 developers to research the NYSE and other global markets using Python; utilize NumPy, pandas, Matplotlib, and yfinance libraries. Work with other groups and projects to analyze, predict, and further research the stock market.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-
-    </div>
-
-     </section>
-
-     <section id="contact">
-
-    <div class="contact">
-        <div class="title">
-            <h1>Contact Us</h1>
+    <section id="contact">
+        <div class="contact">
+            <div class="title">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="imgcontainer">
+                <img src="images/Thomas 1.jpg" alt="Thomas Pic" loading="lazy">
+                <img src="images/Josh re 2.jpg" alt="Josh Pic" loading="lazy">
+            </div>
+            <div class="sectioncontainer">
+                <section>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/thomasyousef21/"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="https://github.com/thomas211738/"><img src="images/github.png" alt="GitHub"></a></li>
+                        <li><a href="mailto:pharaoh@bu.com"><img src="images/mail.png" alt="Email"></a></li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/josh-leeds/"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="https://github.com/joshleeds/"><img src="images/github.png" alt="GitHub"></a></li>
+                        <li><a href="mailto:jleeds@bu.com"><img src="images/mail.png" alt="Email"></a></li>
+                    </ul>
+                </section>
+            </div>
         </div>
-        <div class="imgcontainer">
-            <img src="Thomas 1.jpg" alt="Thomas Pic">
-            <img src="Josh re 2.jpg" alt="Josh Pic">
-        </div>
-        <div class="sectioncontainer">
-            <section>
-                <ul>
-                   <li><a href="https://www.linkedin.com/in/thomasyousef21/"> <img src="linkedin.png" alt="linked in"> </a></li>
-                   <li><a href="https://github.com/thomas211738/"> <img src="github.png" alt="linked in"> </a></li>
-                   <li><a href="mailto:pharaoh@bu.com"><img src="mail.png" alt="linked in"> </a></li>
-                </ul>
-            </section>
-            <section>
-                <ul>
-                   <li><a href="https://www.linkedin.com/in/josh-leeds/"> <img src="linkedin.png" alt="linked in"> </a></li>
-                   <li><a href="https://github.com/joshleeds/"> <img src="github.png" alt="linked in"> </a></li>
-                   <li><a href="mailto:jleeds@bu.com"> <img src="mail.png" alt="linked in"> </a></li>
-                </ul>
-            </section>
-        </div>
-        
-    </div>
+    </section>
 
-
-     </section>
-
-
-
+    <!-- Scripts loaded at end of body in correct dependency order -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-
+    <script src="js/script.js" defer></script>
 </body>
 </html>
