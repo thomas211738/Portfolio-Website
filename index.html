@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Patrick+Hand&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
     <title>Thomas and Josh's Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <section id="home">
@@ -163,108 +164,123 @@
         <div class="projects">
             <div class="title">
                 <h1>Projects</h1>
+                <p class="projects-hint">Hover over a card to explore each project</p>
             </div>
             <div class="projectcontainer">
 
                 <!-- KTP Mobile App -->
                 <div class="project">
-                    <div class="project-icon">📱</div>
+                    <div class="project-icon"><i class="fa-solid fa-mobile-screen"></i></div>
                     <h1>Boston KTP App</h1>
-                    <p>Full-stack mobile app for Kappa Theta Pi built with React Native, Expo, Node.js, Firebase, and MongoDB. Serves 300+ active users with 1,000+ daily database invocations via REST. Integrated Google OAuth with persistent secure sessions.</p>
-                    <div class="tech-badges">
-                        <span class="badge">React Native</span>
-                        <span class="badge">Expo</span>
-                        <span class="badge">Node.js</span>
-                        <span class="badge">Firebase</span>
-                        <span class="badge">MongoDB</span>
-                    </div>
-                    <div class="project-btn-group">
-                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738/KTP_Activities')">⌥ GitHub</button>
-                        <!-- TODO: replace # with the actual App Store URL -->
-                        <button class="project-btn live" onclick="window.open('#')"> App Store</button>
+                    <div class="project-expandable">
+                        <div class="project-expandable-inner">
+                            <p>Full-stack mobile app for Kappa Theta Pi built with React Native, Expo, Node.js, Firebase, and MongoDB. Serves 300+ active users with 1,000+ daily database invocations via REST. Integrated Google OAuth with persistent secure sessions.</p>
+                            <div class="tech-badges">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="tech-stack-icon" alt="React Native" title="React Native">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="tech-stack-icon" alt="Node.js" title="Node.js">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" class="tech-stack-icon" alt="Firebase" title="Firebase">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" class="tech-stack-icon" alt="MongoDB" title="MongoDB">
+                            </div>
+                            <div class="project-btn-group">
+                                <button class="project-btn" onclick="window.open('https://github.com/thomas211738/KTP_Activities')">⌥ GitHub</button>
+                                <button class="project-btn live" onclick="window.open('#')"> App Store</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- KTP Website -->
                 <div class="project">
-                    <div class="project-icon">🌐</div>
+                    <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
                     <h1>KTP Boston Website</h1>
-                    <p>Designed and developed the official Kappa Theta Pi Boston University chapter website. Built with React and TypeScript, the site serves as the public face for recruitment, events, and member resources for 300+ chapter members.</p>
-                    <div class="tech-badges">
-                        <span class="badge">React</span>
-                        <span class="badge">TypeScript</span>
-                        <span class="badge">Node.js</span>
-                        <span class="badge">CSS</span>
-                    </div>
-                    <div class="project-btn-group">
-                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738/website')">⌥ GitHub</button>
-                        <button class="project-btn live" onclick="window.open('https://ktp-bostonu.com/')"> Live Site</button>
+                    <div class="project-expandable">
+                        <div class="project-expandable-inner">
+                            <p>Designed and developed the official Kappa Theta Pi Boston University chapter website. Built with React and TypeScript, the site serves as the public face for recruitment, events, and member resources for 300+ chapter members.</p>
+                            <div class="tech-badges">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="tech-stack-icon" alt="React" title="React">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" class="tech-stack-icon" alt="TypeScript" title="TypeScript">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="tech-stack-icon" alt="Node.js" title="Node.js">
+                                <img src="images/css.gif" class="tech-stack-icon" alt="CSS" title="CSS">
+                            </div>
+                            <div class="project-btn-group">
+                                <button class="project-btn" onclick="window.open('https://github.com/thomas211738/website')">⌥ GitHub</button>
+                                <button class="project-btn live" onclick="window.open('https://ktp-bostonu.com/')"> Live Site</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Stock Clustering -->
                 <div class="project">
-                    <div class="project-icon">📊</div>
+                    <div class="project-icon"><i class="fa-solid fa-chart-bar"></i></div>
                     <h1>Stock Clustering Model</h1>
-                    <p>Web app that analyzes user stock portfolios using volatility scoring and historical data to recommend lower-risk, same-sector substitutes. K-means clustering on S&P 500 via dividend yield, volume, and profit margin to predict future portfolio performance.</p>
-                    <div class="tech-badges">
-                        <span class="badge">Python</span>
-                        <span class="badge">React</span>
-                        <span class="badge">Flask</span>
-                        <span class="badge">scikit-learn</span>
-                        <span class="badge">Pandas</span>
-                    </div>
-                    <div class="project-btn-group">
-                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738/cs506-final-project')">⌥ GitHub</button>
+                    <div class="project-expandable">
+                        <div class="project-expandable-inner">
+                            <p>Web app that analyzes user stock portfolios using volatility scoring and historical data to recommend lower-risk, same-sector substitutes. K-means clustering on S&P 500 via dividend yield, volume, and profit margin to predict future portfolio performance.</p>
+                            <div class="tech-badges">
+                                <img src="images/python.gif" class="tech-stack-icon" alt="Python" title="Python">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="tech-stack-icon" alt="React" title="React">
+                                <img src="images/sklearn.png" class="tech-stack-icon" alt="scikit-learn" title="scikit-learn">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" class="tech-stack-icon" alt="Pandas" title="Pandas">
+                            </div>
+                            <div class="project-btn-group">
+                                <button class="project-btn" onclick="window.open('https://github.com/thomas211738/cs506-final-project')">⌥ GitHub</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Sports Betting Arbitrage -->
                 <div class="project">
-                    <div class="project-icon">🎯</div>
+                    <div class="project-icon"><i class="fa-solid fa-bullseye"></i></div>
                     <h1>Sports Betting Arbitrage</h1>
-                    <p>Python arbitrage detection system using the Odds-API to aggregate live betting odds across 15+ sportsbooks and 70 sports. Collects and compares sportsbook data every 5 minutes in real time, identifying timing-based arbitrage opportunities across platforms.</p>
-                    <div class="tech-badges">
-                        <span class="badge">Python</span>
-                        <span class="badge">Odds-API</span>
-                        <span class="badge">REST</span>
-                        <span class="badge">Jupyter</span>
-                    </div>
-                    <div class="project-btn-group">
-                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738/SBA')">⌥ GitHub</button>
+                    <div class="project-expandable">
+                        <div class="project-expandable-inner">
+                            <p>Python arbitrage detection system using the Odds-API to aggregate live betting odds across 15+ sportsbooks and 70 sports. Collects and compares sportsbook data every 5 minutes in real time, identifying timing-based arbitrage opportunities across platforms.</p>
+                            <div class="tech-badges">
+                                <img src="images/python.gif" class="tech-stack-icon" alt="Python" title="Python">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg" class="tech-stack-icon" alt="Jupyter" title="Jupyter">
+                            </div>
+                            <div class="project-btn-group">
+                                <button class="project-btn" onclick="window.open('https://github.com/thomas211738/SBA')">⌥ GitHub</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- COVID-19 Policy -->
                 <div class="project">
-                    <div class="project-icon">🏥</div>
+                    <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
                     <h1>COVID-19 Policy Efficiency</h1>
-                    <p>Led a team to build a data pipeline on Azure that extracted, cleaned, loaded, and analyzed COVID-19 policy data to identify the most effective interventions in reducing case counts. Created a galaxy schema in an Azure ODS loaded into an Azure Synapse warehouse, connected to PowerBI.</p>
-                    <div class="tech-badges">
-                        <span class="badge">Azure</span>
-                        <span class="badge">Azure Synapse</span>
-                        <span class="badge">PowerBI</span>
-                        <span class="badge">Python</span>
-                        <span class="badge">SQL</span>
-                    </div>
-                    <div class="project-btn-group">
-                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738')">⌥ GitHub</button>
+                    <div class="project-expandable">
+                        <div class="project-expandable-inner">
+                            <p>Led a team to build a data pipeline on Azure that extracted, cleaned, loaded, and analyzed COVID-19 policy data to identify the most effective interventions in reducing case counts. Created a galaxy schema in an Azure ODS loaded into an Azure Synapse warehouse, connected to PowerBI.</p>
+                            <div class="tech-badges">
+                                <img src="images/azure.png" class="tech-stack-icon" alt="Azure" title="Azure">
+                                <img src="images/python.gif" class="tech-stack-icon" alt="Python" title="Python">
+                            </div>
+                            <div class="project-btn-group">
+                                <button class="project-btn" onclick="window.open('https://github.com/thomas211738')">⌥ GitHub</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Sentiment Stock -->
                 <div class="project">
-                    <div class="project-icon">📰</div>
+                    <div class="project-icon"><i class="fa-solid fa-newspaper"></i></div>
                     <h1>Sentiment Driven Stock Selector</h1>
-                    <p>Engineered a sentiment analysis pipeline with Python and NLTK to scrape and analyze 100 daily headlines per S&P 500 company. Discovered strong positive sentiment–return correlations in 60+ companies, demonstrating the predictive potential of news sentiment in equity performance.</p>
-                    <div class="tech-badges">
-                        <span class="badge">Python</span>
-                        <span class="badge">NLTK</span>
-                        <span class="badge">Pandas</span>
-                        <span class="badge">BeautifulSoup</span>
-                    </div>
-                    <div class="project-btn-group">
-                        <button class="project-btn" onclick="window.open('https://github.com/thomas211738/Sentiment-Driven-Stock-Selector')">⌥ GitHub</button>
+                    <div class="project-expandable">
+                        <div class="project-expandable-inner">
+                            <p>Engineered a sentiment analysis pipeline with Python and NLTK to scrape and analyze 100 daily headlines per S&P 500 company. Discovered strong positive sentiment–return correlations in 60+ companies, demonstrating the predictive potential of news sentiment in equity performance.</p>
+                            <div class="tech-badges">
+                                <img src="images/python.gif" class="tech-stack-icon" alt="Python" title="Python">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" class="tech-stack-icon" alt="Pandas" title="Pandas">
+                            </div>
+                            <div class="project-btn-group">
+                                <button class="project-btn" onclick="window.open('https://github.com/thomas211738/Sentiment-Driven-Stock-Selector')">⌥ GitHub</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -305,11 +321,6 @@
                 <div class="text-container">
                     <h2>BU Finance and Investments Club</h2>
                     <p><strong>Assistant VP of Quantitative Research</strong> — organized and delivered lectures to junior developers on Binomial Options Pricing Models, Modern Portfolio Theory, and Monte Carlo Methods. Led quantitative finance projects each semester, presenting findings to club members, the executive board, BU professors, and industry professionals.</p>
-                    <div class="icons">
-                        <a href="https://www.linkedin.com/company/bu-finance-investments-club/">
-                            <img src="images/linkedin1.png" alt="BU Finance LinkedIn" loading="lazy">
-                        </a>
-                    </div>
                 </div>
             </div>
 

@@ -173,10 +173,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // ----- Intersection Observers -----
   var observerOpts = { threshold: 0.1 };
 
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) { e.target.classList.toggle("show", e.isIntersecting); });
-  }, observerOpts);
-
   var observer2 = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) { e.target.classList.toggle("show2", e.isIntersecting); });
   }, observerOpts);
@@ -189,7 +185,10 @@ document.addEventListener("DOMContentLoaded", function () {
     entries.forEach(function (e) { e.target.classList.toggle("show4", e.isIntersecting); });
   }, observerOpts);
 
-  document.querySelectorAll(".programing_languages").forEach(function (el) { observer.observe(el); });
+  var skillsObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { e.target.classList.toggle("show", e.isIntersecting); });
+  }, { threshold: 0, rootMargin: "0px 0px 0px 300px" });
+  document.querySelectorAll(".programing_languages").forEach(function (el) { skillsObserver.observe(el); });
   document.querySelectorAll(".experience .section").forEach(function (el) { observer2.observe(el); });
   document.querySelectorAll(".about1, .about2, .paragraph, .gradient-text").forEach(function (el) { observer3.observe(el); });
   document.querySelectorAll(".container, .container2").forEach(function (el) { observer4.observe(el); });

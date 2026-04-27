@@ -755,34 +755,63 @@ p {
 .projects .projectcontainer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  max-width: 1100px;
+  gap: 80px;
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 50px 40px 80px;
+  padding: 20px 60px 120px;
+}
+
+.projects-hint {
+  text-align: center;
+  color: #000;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin: 8px 0 0;
+  padding: 0;
 }
 
 .projects .projectcontainer .project{
   background: rgba(40, 40, 52, 0.92);
   border-radius: 20px;
-  padding: 28px 20px 22px;
+  padding: 32px 22px 26px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   border: 1px solid rgba(255,255,255,0.08);
+  cursor: pointer;
   transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
 .projects .projectcontainer .project:hover{
-  transform: translateY(-10px);
-  box-shadow: 0 28px 56px rgba(0, 217, 255, 0.18);
-  border-color: rgba(0, 217, 255, 0.28);
+  transform: translateY(-8px);
+  box-shadow: 0 24px 52px rgba(0, 217, 255, 0.2);
+  border-color: rgba(0, 217, 255, 0.35);
 }
 
 .project-icon {
-  font-size: 52px;
   margin-bottom: 14px;
-  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+}
+
+.project-icon i {
+  font-size: 44px;
+  color: #b0b0b0;
+}
+
+.tech-stack-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
 }
 
 .projects .projectcontainer .project h1{
@@ -790,32 +819,75 @@ p {
   color: #fff;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
-  margin: 0 0 10px;
+  margin: 0;
   text-align: center;
-  opacity: 1;
-  visibility: visible;
-  top: 0;
-  position: static;
 }
 
 .projects .projectcontainer .project p{
-  font-size: 12.5px;
+  font-size: 14px;
   color: rgba(255,255,255,0.72);
   font-family: 'Patrick Hand', cursive;
   text-align: left;
-  flex-grow: 1;
   margin: 0 0 14px;
-  opacity: 1;
-  visibility: visible;
-  top: 0;
-  position: static;
   padding: 0;
+}
+
+/* ---- Expandable reveal section ---- */
+.project-expandable {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.48s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+
+.project:hover .project-expandable {
+  grid-template-rows: 1fr;
+}
+
+.project-expandable-inner {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 14px;
+}
+
+/* Default (hover-out): snap away quickly */
+.projects .projectcontainer .project .project-expandable p,
+.projects .projectcontainer .project .project-expandable .tech-badges,
+.projects .projectcontainer .project .project-expandable .project-btn-group {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+/* Hover-in: staggered fade+rise */
+.projects .projectcontainer .project:hover .project-expandable p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.38s ease, transform 0.38s ease;
+  transition-delay: 0.2s;
+}
+
+.projects .projectcontainer .project:hover .project-expandable .tech-badges {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.38s ease, transform 0.38s ease;
+  transition-delay: 0.32s;
+}
+
+.projects .projectcontainer .project:hover .project-expandable .project-btn-group {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.38s ease, transform 0.38s ease;
+  transition-delay: 0.44s;
 }
 
 .tech-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 8px;
   justify-content: center;
   margin-bottom: 16px;
   width: 100%;
@@ -1443,8 +1515,8 @@ header.sticky .hamburger span {
 
   .projects .projectcontainer {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 40px 24px 60px;
+    gap: 48px;
+    padding: 20px 32px 80px;
   }
 }
 
@@ -1627,8 +1699,8 @@ header.sticky .hamburger span {
 
   .projects .projectcontainer {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 30px 20px 60px;
+    gap: 32px;
+    padding: 20px 20px 60px;
     max-width: 100%;
   }
 
@@ -1636,6 +1708,18 @@ header.sticky .hamburger span {
     max-width: 420px;
     margin: 0 auto;
     width: 100%;
+  }
+
+  /* Always show expandable content on touch devices */
+  .project .project-expandable {
+    grid-template-rows: 1fr;
+  }
+
+  .projects .projectcontainer .project .project-expandable p,
+  .projects .projectcontainer .project .project-expandable .tech-badges,
+  .projects .projectcontainer .project .project-expandable .project-btn-group {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   /* --- Involvement --- */
